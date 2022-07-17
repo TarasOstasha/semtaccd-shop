@@ -1,0 +1,19 @@
+header.sticky-top.d-flex.flex-wrap.align-items-center.justify-content-center.justify-content-md-between.mb-4.border-bottom
+  nav.navbar.navbar-expand-lg.bg-dark
+    .container
+      a.navbar-brand(href='/')
+        - const img = "/images/logo.png"
+        img.logo(src=img alt='semtaccd')
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarScroll' aria-controls='navbarScroll' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarScroll.collapse.navbar-collapse.custom-nav-collapse
+        ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll.custom-nav
+          each navLink in nav
+            li 
+              a(class=(PageId === navLink.name ? "active" : undefined) href=`${navLink.link}`)=navLink.text 
+        .d-flex.d-block.d-sm-none
+          a(href='tel:+19177050712') +19177050712
+          a(href='') Book Online
+      .d-flex.d-none.d-sm-block.d-sm-none.d-md-block
+        a(href='tel:+19177050712') +19177050712
+        a(href='') Book Online
