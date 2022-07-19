@@ -1,11 +1,27 @@
-block variables
-  - var SiteName = "Sample Site"
-  - var PageName = "Home"
-  - var PageID = 'index';
-
 extends layout
 
 block content
   //- h1= title
   //- p Welcome to #{title}
   include parts/header
+  include parts/carousel
+  .home-instructions
+    .home-introduction-text
+      p.home-instructions-paragraph
+        | Craftsmanship. Heritage. Excellence. 
+        | These are the words that define us. These are the words that guide us. 
+        | We hope you enjoy this sampling of our work. 
+  .kitchens
+    h2 Kitchens
+      .line
+  .home-collection-item
+    div.list-collection
+      div.hsi-background.fade-in 
+      ul.tabs-menu  
+        li menu1
+        li mwnu2
+        li mwnu3
+        li menu4
+        li menu5
+        li menu6
+        li menu7
