@@ -59,7 +59,7 @@ nav .custom-nav-collapse {
   background-size: auto,cover;
   background-repeat: repeat,no-repeat;
   background-attachment: scroll,fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29) 53%, rgba(0, 0, 0, 0.29) 98%), url(/images/home1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29) 53%, rgba(0, 0, 0, 0.29) 98%), url(/images/home2.jpg);
 }
 .home-introduction-text {
   position: relative;
@@ -157,4 +157,7 @@ nav .custom-nav-collapse {
   justify-content: space-around;
   color: #fff;
   list-style: none;
+}
+.tabs-menu li {
+  cursor: pointer;
 }
