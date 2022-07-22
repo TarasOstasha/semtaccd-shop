@@ -1,6 +1,22 @@
 var express = require('express');
 var router = express.Router();
 
+const multer = require('multer');
+const path = require('path');
+
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, path.join(__dirname, '../public/images/'))
+  },
+  filename: (req, file, cb) => {
+    console.log(file);
+    cb(null, Date.now() + path.extname(file.originalname));
+  }
+});
+
+const upload = multer({ storage: storage })
+
 let mainMenu = [
   {
     link: '/', text: 'Home', name: 'index'
@@ -50,6 +66,15 @@ router.get('/contact-us', (req, res) => {
     nav: mainMenu,
     PageId: 'contact-us'
   });
+});
+
+// Upload imgs
+router.get('/upload', (req, res) => {
+  res.status(201).send('Upload');
+});
+
+router.post('/upload', upload.single('image'), (req, res) => {
+  res.status(201).send('Image Uploaded');
 });
 
 module.exports = router;

@@ -41,11 +41,13 @@ galleryImgArr.forEach(element => {
 });
 function changeTo(x, img) {
     x.style.backgroundImage = `url(${img})`;
-    x.style.transitionDuration = '1s';
+    // x.style.transitionDuration = '1s';
+    x.style.transition = "2s";
+    // x.style.opacity = "1";
 }
 
-function changeBack(x, img) {
-    x.style.backgroundColor = img;
+function changeBack(x) {
+    x.style.transition = "2s";
 }
 // another way
 for (let key of galleryImgArr) {
