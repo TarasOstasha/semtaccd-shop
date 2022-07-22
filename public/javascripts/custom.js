@@ -41,6 +41,7 @@ galleryImgArr.forEach(element => {
 });
 function changeTo(x, img) {
     x.style.backgroundImage = `url(${img})`;
+    x.style.transitionDuration = '1s';
 }
 
 function changeBack(x, img) {

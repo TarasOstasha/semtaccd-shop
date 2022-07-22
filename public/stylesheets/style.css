@@ -120,6 +120,7 @@ nav .custom-nav-collapse {
 .hsi-background {
    padding: 20em 0;
    list-style: none;
+   transition: 3s;
   /* position: absolute;
   top: 0;
   left: 0;
@@ -160,4 +161,31 @@ nav .custom-nav-collapse {
 }
 .tabs-menu li {
   cursor: pointer;
+  /* transition: 1s; */
+}
+
+
+
+
+
+
+
+/* FOOTER */
+.footer-top {
+  color: #fff;
+  padding: 1em 0;
+  border-bottom: 1px solid #000;
+}
+.footer-top h4 {
+  margin-bottom: 1em;
+}
+
+.footer-bottom {
+  padding: 1em 0;
+}
+.info {
+  color: #fff;
+}
+.info a {
+  color: yellow;
 }
