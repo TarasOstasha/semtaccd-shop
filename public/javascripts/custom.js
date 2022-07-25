@@ -55,3 +55,6 @@ for (let key of galleryImgArr) {
     // li = document.createElement('li');
     // document.getElementById('tabs-menu').appendChild(li);
 }
+
+
+// ** Gallery
