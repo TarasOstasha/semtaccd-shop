@@ -60,6 +60,17 @@ router.get('/portfolio', (req, res) => {
   });
 });
 
+router.get('/portfolio/:id', (req, res) => {
+  const id = req.params.id;
+  console.log(id,req)
+  // res.render('portfolio', { 
+  //   title: 'portfolio page',
+  //   nav: mainMenu ,
+  //   PageId: 'portfolio'
+  // });
+  res.send(id+' - kitchen');
+});
+
 /* GET Contact Us page. */
 router.get('/contact-us', (req, res) => {
   res.render('contact-us', { 

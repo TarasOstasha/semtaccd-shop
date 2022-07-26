@@ -11,9 +11,13 @@ header.sticky-top.d-flex.flex-wrap.align-items-center.justify-content-center.jus
           each navLink in nav
             li 
               a(class=(PageId === navLink.name ? "active" : undefined) href=`${navLink.link}`)=navLink.text 
-        .d-flex.d-block.d-sm-none
-          a(href='tel:+19177050712') +19177050712
+        .d-flex.d-block.d-sm-none.contacts
+          a(href='tel:+19177050712') 917-705-0712
           a(href='') Book Online
-      .d-flex.d-none.d-sm-block.d-sm-none.d-md-block
-        a(href='tel:+19177050712') +19177050712
-        a(href='') Book Online
+      .d-flex.d-none.d-sm-block.d-sm-none.d-md-block.contacts
+        a(href='tel:+19177050712') 
+          i.bi.bi-telephone 
+          span 917-705-0712
+        a(href='') 
+          i.bi.bi-circle-half
+          span  Book Online
