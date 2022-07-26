@@ -44,5 +44,19 @@ block content
       div.hsi-background.fade-in 
       ul.tabs-menu#tabs-menu
         li paneling, family rooms, mud rooms, etc.  
+
+  //- button.btn.btn-primary(type='button', data-bs-toggle='modal', data-bs-target='#exampleModal')
+  //-   | Launch demo modal
+  #exampleModal.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')  
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.modal-title Modal title
+            button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            modal-body
+            | ...
+            .modal-footer
+              button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
+              button.btn.btn-primary(type='button') Save changes
   include parts/upload       
   include parts/footer

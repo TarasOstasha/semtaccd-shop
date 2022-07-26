@@ -60,12 +60,20 @@ router.get('/portfolio', (req, res) => {
   });
 });
 
+let projects = [
+  { group: 'kitchens', name: 'test-kitchen', imgs: [1,2,3,4,5,6,7] },
+  { group: 'bathrooms', name: 'test-bathroom', imgs: [1,2,3,4,5,6,7] },
+  { group: 'closets', name: 'test-closet', imgs: [1,2,3,4,5,6,7] },
+  { group: 'bars', name: 'test-bar', imgs: [1,2,3,4,5,6,7] },
+  { group: 'mudrooms', name: 'test-mudroom', imgs: [1,2,3,4,5,6,7] },
+  { group: 'others', name: 'test-other', imgs: [1,2,3,4,5,6,7] }
+];
+
 router.get('/portfolio/:id', (req, res) => {
   const id = req.params.id;
   console.log(id,req)
-  // res.render('portfolio', { 
+  // res.render('project', { 
   //   title: 'portfolio page',
-  //   nav: mainMenu ,
   //   PageId: 'portfolio'
   // });
   res.send(id+' - kitchen');

@@ -18,6 +18,19 @@ header.sticky-top.d-flex.flex-wrap.align-items-center.justify-content-center.jus
         a(href='tel:+19177050712') 
           i.bi.bi-telephone 
           span 917-705-0712
-        a(href='') 
+        a(href='javascript:void(0)', data-bs-toggle='modal', data-bs-target='#exampleModal')
           i.bi.bi-circle-half
-          span  Book Online
+          span Book Online
+        //- button.btn.btn-primary(type='button', data-bs-toggle='modal', data-bs-target='#exampleModal')
+        //-   | Launch demo modal  
+        #exampleModal.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')  
+          .modal-dialog
+            .modal-content.myModal
+              .modal-header
+                h5#exampleModalLabel.modal-title Modal title
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+              modal-body
+              | ...
+              .modal-footer
+                button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
+                button.btn.btn-primary(type='button') Save changes

@@ -92,6 +92,12 @@ nav .custom-nav-collapse {
   /* position: absolute; */
   background: #f5df4d;
 }
+/* .myModal,.modal-dialog{
+  z-index: 999999!important;
+} */
+.modal-backdrop {
+  z-index: 1!important;
+}
 
 /* CAROUSEL BLOCK */
 /* .carousel ul {
