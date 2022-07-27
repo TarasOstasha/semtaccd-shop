@@ -12,6 +12,9 @@ a {
   font-family: 'PT Serif', serif;
   /* font-family: 'Open Sans', sans-serif; */
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif', serif;
+}
 
 /* HEADER BLOCK */
 nav {
@@ -116,6 +119,23 @@ nav .custom-nav-collapse {
 .carousel-item img {
   height: 100vh!important;;
 }
+.carousel-inner {
+  position: relative;
+}
+.carousel-inner h1 {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  padding: 1em;
+  font-size: 58px;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  z-index: 2;
+}
+
 
 /* HOME INSTRUCTIONS */
 .home-instructions {
