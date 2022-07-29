@@ -95,13 +95,34 @@ nav .custom-nav-collapse {
   /* position: absolute; */
   background: #f5df4d;
 }
+
 /* .myModal,.modal-dialog{
   z-index: 999999!important;
 } */
 .modal-backdrop {
   z-index: 1!important;
 }
-
+.my-modal {
+  background: rgba(0, 0, 0, 0.5)!important;
+  z-index: 999;
+}
+.modal-header {
+  background: rgba(0, 0, 0, 0.9)!important;
+  width: 100%;
+}
+.modal-title {
+  color: #fff;
+}
+.modal-title span {
+  text-align: center;
+}
+.modal-body form input,textarea {
+  background: rgba(0, 0, 0, 0.5)!important;
+  margin: 1em 0;
+}
+.modal-footer {
+  background: rgba(0, 0, 0, 0.9)!important;
+}
 /* CAROUSEL BLOCK */
 /* .carousel ul {
   padding: 0;

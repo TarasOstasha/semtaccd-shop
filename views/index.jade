@@ -44,22 +44,5 @@ block content
       div.hsi-background.fade-in 
       ul.tabs-menu#tabs-menu
         li paneling, family rooms, mud rooms, etc.  
-  #exampleModal.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')  
-    .modal-dialog
-      .modal-content
-        .modal-header
-          h5#exampleModalLabel.modal-title BOOK AN APPOINTMENT
-          button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-        .modal-body
-          p hjkdshfkjsdhfkjshdk
-          form(name='requestForm', action='/sendRequest', method='post')
-            input#name(name='name')
-            input#email(name='email')
-            input#subject(name='subject')
-            textarea#message(name='message')
-        .modal-footer
-          button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
-          button.btn.btn-primary(type='submit') Save changessss
-  //- include parts/booking
   include parts/upload       
   include parts/footer
