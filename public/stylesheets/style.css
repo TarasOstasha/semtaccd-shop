@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Open+Sans:wght@300&family=PT+Serif&display=swap');
+
+:root {
+  --yellow: #f5df4d;
+  --black: #000000;
+  --white: #fff;
+}
+
 body {
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -71,7 +78,7 @@ nav .custom-nav-collapse {
   background: #f5df4d;
 }
 .contacts a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   margin: 0 1em;
   transition: .5s;
@@ -111,7 +118,7 @@ nav .custom-nav-collapse {
   width: 100%;
 }
 .modal-title {
-  color: #fff;
+  color:var(--white);
 }
 .modal-title span {
   text-align: center;
@@ -122,6 +129,13 @@ nav .custom-nav-collapse {
 }
 .modal-footer {
   background: rgba(0, 0, 0, 0.9)!important;
+}
+.send-form {
+  background: var(--yellow)!important;
+  color: var(--black)!important;
+}
+.close-form {
+  background: rgba(255, 255, 255, 0.7)!important;
 }
 /* CAROUSEL BLOCK */
 /* .carousel ul {
@@ -355,4 +369,51 @@ nav .custom-nav-collapse {
 }
 .info a {
   color: yellow;
+}
+
+
+/* FOOTER */
+.navigation ul, .social ul {
+  padding: 0;
+}
+.navigation ul li, .social ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.navigation ul li a, .social ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+.navigation ul li a:hover {
+  color: var(--yellow);
+}
+.active-footer {
+  color: var(--yellow)!important;
+}
+.social ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social ul li {
+  font-size: 35px;
+}
+.social ul li a:hover {
+  color: var(--yellow);
+}
+.contact-info ul {
+  padding: 0;
+}
+.contact-info ul li {
+  list-style: none;
+}
+.contact-info ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+.contact-info ul li a:first-child:hover, .contact-info ul li a:nth-child(2):hover, .contact-info ul li a:nth-child(3):hover {
+  color: var(--yellow);
+}
+.contact-info ul li i {
+  margin-right: .5em;
 }

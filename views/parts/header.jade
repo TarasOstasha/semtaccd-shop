@@ -21,19 +21,6 @@ header.sticky-top.d-flex.flex-wrap.align-items-center.justify-content-center.jus
         a(href='javascript:void(0)', data-bs-toggle='modal', data-bs-target='#exampleModal')
           i.bi.bi-circle-half
           span  Book Online
-        //- button.btn.btn-primary(type='button', data-bs-toggle='modal', data-bs-target='#exampleModal')
-        //-   | Launch demo modal  
-        //- #exampleModal.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')  
-        //-   .modal-dialog
-        //-     .modal-content.myModal
-        //-       .modal-header
-        //-         h5#exampleModalLabel.modal-title Modal title
-        //-         button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-        //-       modal-body
-        //-       | ...
-        //-       .modal-footer
-        //-         button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
-        //-         button.btn.btn-primary(type='button') Save changes
         #exampleModal.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')  
           .modal-dialog
             .modal-content.my-modal
@@ -48,5 +35,5 @@ header.sticky-top.d-flex.flex-wrap.align-items-center.justify-content-center.jus
                   input.form-control#tel(name='tel', placeholder="Your cellphone")
                   textarea.form-control#message(name='message', placeholder="Your Message")
               .modal-footer
-                button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
-                button.btn.btn-success(type='submit') Save changes
+                button.close-form.btn(type='button', data-bs-dismiss='modal') Close
+                button.send-form.btn(type='submit') Save changes

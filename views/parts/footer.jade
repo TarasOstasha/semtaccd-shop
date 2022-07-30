@@ -5,26 +5,40 @@ footer.bg-dark
                 h4 Contact Info
                 hr
                 ul
-                    li <i class="bi bi-geo-alt"></i> We are available to answer any questions you may have:
-                    li 257 Ely Ave, Norwalk CT 06854
-                    li semtaccd@gmail.com
-                    li +1 (917) 705 0712
+                    li We are available to answer any questions you may have:
+                    li 
+                        a(href="http://maps.google.com/?q=257 Ely Ave, Norwalk CT 06854", target="_blank")
+                            i.bi.bi-geo-alt 
+                            i 257 Ely Ave, Norwalk CT 06854
+                    li
+                        a(href="mailto:semtaccd@gmail.com") 
+                            i.bi.bi-envelope 
+                            i semtaccd@gmail.com
+                    li 
+                        a(href="tel:+19177050712")
+                            i.bi.bi-telephone 
+                            i (917) 705 0712
             .navigation
                 h4 Navigation
                 hr
-                ul
-                    li Home
-                    li About
-                    li Potrfolio
-                    li Contact Us
+                ul.custom-nav
+                    each navLink in nav
+                        li 
+                            a(class=(PageId === navLink.name ? "active-footer" : undefined) href=`${navLink.link}`)=navLink.text 
             .social
                 h4 Follow Us
                 hr
                 ul
-                    li facebook icon
-                    li instagram icon
-                    li so on...
-                    li so on...
+                    li 
+                        a(href="")
+                            i.bi.bi-facebook
+                    li 
+                        a(href="")
+                            ii.bi.bi-instagram
+                    //- li so on...
+                    //- li so on...
+                br
+                br
         .footer-bottom.border-top
             .info 
                 | &copy; Copyright 
