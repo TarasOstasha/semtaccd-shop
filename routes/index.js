@@ -97,6 +97,13 @@ router.post('/upload', upload.single('image'), (req, res) => {
   res.status(201).send('Image Uploaded');
 });
 
+// let _id;
+router.get('/gallery/:id', (req, res) => {
+  let _id = req.params.id;
+  console.log(_id)
+  res.redirect(`/project/${_id}`);
+  // res.status(201).json({_id: _id})
+});
 
 
 // photo gallery

@@ -8,7 +8,8 @@ var bodyParser = require('body-parser')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-let authRouter = require('./routes/authRoutes');
+var authRouter = require('./routes/authRoutes');
+var galleryRouter = require('./routes/gallery');
 
 var app = express();
 const Gallery = require('express-photo-gallery');
@@ -34,8 +35,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
+app.use('/project', galleryRouter);
 
-app.use('/taras', Gallery('public/images', options));
+// const id = 1;
+const galleryName = '2'; 
+// console.log(id);
+app.use(`/project/:id`, Gallery(`public/images/${galleryName}`, options));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
