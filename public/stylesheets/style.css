@@ -420,3 +420,21 @@ nav .custom-nav-collapse {
 .contact-info ul li i {
   margin-right: .5em;
 }
+
+/*************** LOGIN PAGE ****************/ 
+.login-form {
+  max-width: 25em;
+  margin: 5em auto;
+  /* padding: 5em 0; */
+}
+.login-form input {
+  color: var(--black)!important;
+}
+.login-title {
+  text-align: center;
+  padding-top: 3em;
+  font-size: 2em;
+}
+.error-msg {
+  color: red;
+}
